@@ -1,5 +1,5 @@
 <template>
-  <div id="modal-fullscreen-app">
+  <div id="app">
     <Modal>
 
     </Modal>
@@ -10,7 +10,7 @@
 import Modal from './components/Modal.vue'
 
 export default {
-  name: 'modal-fullscreen-app',
+  name: 'modal-fullscreen-vue',
   components: {
     Modal
   }
