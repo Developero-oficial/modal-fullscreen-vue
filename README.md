@@ -36,7 +36,7 @@ Or import in component context:
 
 ## How to use
 
-```
+```javascript
 <template>
   <div>
     <button @click="show = true">Show</button>
