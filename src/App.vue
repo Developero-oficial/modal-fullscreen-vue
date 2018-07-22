@@ -1,17 +1,18 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="modal-fullscreen-app">
+    <Modal>
+
+    </Modal>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Modal from './components/Modal.vue'
 
 export default {
-  name: 'app',
+  name: 'modal-fullscreen-app',
   components: {
-    HelloWorld
+    Modal
   }
 }
 </script>
