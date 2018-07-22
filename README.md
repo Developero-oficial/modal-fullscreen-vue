@@ -86,7 +86,7 @@ Or import in component context:
 ## Props
 
 | Name  | Type Value | Default value| Required |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | show  | Boolean  |  | true |
 | scrollable  | Boolean  | true | false |
 
