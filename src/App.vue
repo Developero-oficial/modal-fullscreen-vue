@@ -1,13 +1,13 @@
 <template>
-  <div id="app" class="modal-fullscreen" :class="{ 'show': this.show }">
-    <div class="modal-content">
-      <div class="modal-header">
+  <div id="app" class="mdv-modal-fullscreen" :class="{ 'mdv-show': this.show }">
+    <div class="mdv-modal-content">
+      <div class="mdv-modal-header">
         <slot name="header"></slot>
       </div>
-      <div class="modal-body" :class="{ 'modal-scrollable': scrollable }">
+      <div class="mdv-modal-body" :class="{ 'mdv-modal-scrollable': scrollable }">
         <slot name="body"></slot>
       </div>
-      <div class="footer">
+      <div class="mdv-footer">
         <slot name="footer"></slot>
       </div>
     </div>
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-  .modal-fullscreen {
+  .mdv-modal-fullscreen {
     position: fixed;
     left: 0;
     top: 0;
@@ -45,7 +45,7 @@ export default {
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   }
 
-  .modal-fullscreen .modal-content {
+  .mdv-modal-fullscreen .mdv-modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,28 +57,29 @@ export default {
     border-radius: 0.5rem;
   }
 
-  .modal-fullscreen .modal-header {
+  .mdv-modal-fullscreen .mdv-modal-header {
     padding: 21.2px 0px;
   }
 
-  .modal-fullscreen .modal-body {
+  .mdv-modal-fullscreen .mdv-modal-body {
     height: calc(100vh - 130px);
     max-height: inherit;
   }
 
-  .modal-fullscreen .modal-body {
+  .mdv-modal-fullscreen .mdv-modal-body {
     height: calc(100vh - 130px);
     max-height: inherit;
   }
 
-  .show {
+  .mdv-show {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 99999;
   }
 
-  .modal-scrollable {
+  .mdv-modal-scrollable {
     overflow-y: auto;
   }
 </style>
